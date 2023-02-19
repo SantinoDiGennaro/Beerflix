@@ -4,7 +4,7 @@ import { Navbar } from "../shared/Navbar";
 
 export function LoginPage(){
     return(
-        <div class="h-screen bg-gradient-to-b from-[#36060c] to-[#180000] flex flex-col justify-between">
+        <div className="min-h-screen h-full bg-gradient-to-b from-[#36060c] to-[#180000] flex flex-col justify-between">
             <Navbar/>
             <Login/>
             <Footer/>
