@@ -1,6 +1,6 @@
-import { Footer } from "./components/shared/Footer";
-import { Login } from "./components/LoginPage/Login";
-import { Navbar } from "./components/shared/Navbar";
+import { Footer } from "../shared/Footer";
+import { Login } from "./Login";
+import { Navbar } from "../shared/Navbar";
 
 export function LoginPage(){
     return(
