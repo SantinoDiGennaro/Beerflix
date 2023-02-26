@@ -9,5 +9,8 @@ Per iniziare ad utilizzare Beerflix, devi prima clonare il repository e installa
 Il sito è stato realizzato utilizzando React, Bootstrap e Tailwind. La homepage del sito presenta una vasta selezione di birre, suddivise per categorie come "ale", "lager", "stout" e "birre speciali". Gli utenti possono selezionare il pacchetto di birre che desiderano acquistare e procedere alla fase di pagamento.
 Il sito gestisce in modo completamente automatizzato il processo di spedizione, spedendo i pacchi direttamente a casa dei clienti abbonati.
 
+<h2>Autori</h2>
+<i><a href="https://github.com/AndreaTarantino23">Andrea Tarantino</a></i> | <i><a href="https://github.com/francescocorsello">Francesco Corsello</a></i> | <i><a href="https://github.com/IacoM">Giuseppe Iacovelli</a></i> | <i><a href="https://github.com/RaveTheN">Giuseppe Reres</a></i> | <i><a href="https://github.com/SantinoDiGennaro">Santino Di Gennaro</a></i>
+
 <h2>Licenza</h2>
 Beerflix utilizza la licenza MIT, il che significa che puoi utilizzare e modificare il codice sorgente del sito senza restrizioni, purché mantieni la stessa licenza quando distribuisci il software derivato.
