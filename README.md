@@ -1,12 +1,13 @@
-Beerflix
+<h1>Beerflix</h1>
 
-Welcome to Beerflix, the website that allows you to buy craft beers and snacks comfortably from your own home. The project is built with React, Bootstrap, and Tailwind and is distributed with a license that allows you to use the source code as you wish, except for commercial purposes.
+Beerflix è un sito di vendita di birre che consente agli utenti di abbonarsi alla ricezione di pacchi di birre a casa. Il sito gestisce il processo di vendita e spedizione in modo completamente automatizzato, consentendo ai clienti di godere di una vasta selezione di birre artigianali direttamente a casa loro.
 
-License
-Beerflix is distributed with a license that allows you to use the source code as you wish, except for commercial purposes. For more information on the license, please refer to the LICENSE file in the project folder.
+<h2>Installazione</h2>
+Per iniziare ad utilizzare Beerflix, devi prima clonare il repository e installare le dipendenze necessarie.
 
-Contributing
-If you'd like to contribute to Beerflix, you're welcome to! First, fork the repository and make any desired changes. Then, submit a pull request to let us know about your changes and improvements.
+<h2>Struttura del sito</h2>
+Il sito è stato realizzato utilizzando React, Bootstrap e Tailwind. La homepage del sito presenta una vasta selezione di birre, suddivise per categorie come "ale", "lager", "stout" e "birre speciali". Gli utenti possono selezionare il pacchetto di birre che desiderano acquistare e procedere alla fase di pagamento.
+Il sito gestisce in modo completamente automatizzato il processo di spedizione, spedendo i pacchi direttamente a casa dei clienti abbonati.
 
-Contact
-If you need help or have any questions, please don't hesitate to contact us at support@beerflix.com. We'll be happy to help you out!
+<h2>Licenza</h2>
+Beerflix utilizza la licenza MIT, il che significa che puoi utilizzare e modificare il codice sorgente del sito senza restrizioni, purché mantieni la stessa licenza quando distribuisci il software derivato.
