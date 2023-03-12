@@ -4,3 +4,39 @@
 .collapse.show {
   visibility: visible;
 }
+.accordion-button.collapsed::after {
+  background: url("./assets/Beerflix\ Logo.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("./assets/landing-page-image/image\ 1.jpg");
+}
+
+.accordion-button:after {
+  order: -1;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+.accordion-button:not(.collapsed) {
+  color: none !important;
+  background-color: #ece7d3 !important;
+}
+
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:active {
+  background-color: #ece7d3;
+  text-decoration: none !important;
+  border: hidden !important;
+  border: none !important;
+  box-shadow: 0px !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ece7d3 !important;
+}

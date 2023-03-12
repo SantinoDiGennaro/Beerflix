@@ -3,7 +3,7 @@ export function Faq() {
     <div className="px-40 pb-4">
       <h1 className="text-2xl font-bold text-center py-4">Altre domande?</h1>
       <div class="accordion accordion-flush" id="accordionExample">
-        <div class="accordion-item ">
+        <div class="accordion-item bg-[#ece7d3]">
           <h2 class="accordion-header" id="headingOne">
             <button
               class="accordion-button"
