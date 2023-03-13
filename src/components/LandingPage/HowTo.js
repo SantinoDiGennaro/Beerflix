@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import montagnettaBirre from "../../assets/landing-page-image/montagnetta_birre.png";
+import immagineBox from "../../assets/landing-page-image/immagine_box.png";
+import calendar from "../../assets/landing-page-image/calendar.png";
+import johnnySins from "../../assets/landing-page-image/johnny_sins.PNG";
 import testImg from "../../assets/landing-page-image/rece1.jpg";
 
 export function HowTo() {
@@ -11,17 +15,17 @@ export function HowTo() {
       </h4>
       <div name="cards-container" className="w-full flex justify-around">
         <div name="card" className="w-[200px]">
-          <img src={testImg} className="w-[200px] h-[200px]" />
+          <img src={montagnettaBirre} className="w-[200px] h-[200px]" />
           <h2 className="pt-2 font-bold text-center">
             Birre per tutti i gusti
           </h2>
           <h4 className="pb-2 pt-2 text-center">
-            Più di 100 nuovi marchi, aggiornati ogni settimana, accuratamente
+            Oltre 100 marchi, aggiornati ogni settimana, accuratamente
             selezionate dai nostri mastri birrai
           </h4>
         </div>
         <div name="card" className="w-[200px]">
-          <img src={testImg} className="w-[200px] h-[200px]" />
+          <img src={immagineBox} className="w-[200px] h-[200px]" />
           <h2 className="pt-2 font-bold text-center">
             Una box perfetta per te{" "}
           </h2>
@@ -31,14 +35,14 @@ export function HowTo() {
           </h4>
         </div>
         <div name="card" className="w-[200px]">
-          <img src={testImg} className="w-[200px] h-[200px]" />
+          <img src={calendar} className="w-[200px] h-[200px]" />
           <h2 className="pt-2 font-bold text-center">
-            Birre per tutti i gusti
+            Abbonamento mensile o settimanale
           </h2>
           <h4 className="pb-2 pt-2 text-center"></h4>
         </div>
         <div name="card" className="w-[200px]">
-          <img src={testImg} className="w-[200px] h-[200px]" />
+          <img src={johnnySins} className="w-[200px] h-[200px]" />
           <h2 className="pt-2 font-bold text-center">
             Direttamente a casa tua
           </h2>
