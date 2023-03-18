@@ -14,6 +14,8 @@ import { useEffect, useState } from "react";
 import { SocialReview } from "./SocialReview";
 import { HowTo } from "./HowTo";
 import { Faq } from "./Faq";
+import { Header } from "./Header";
+import { PianiFlessibili } from "./PianiFlessibili";
 
 export function LandingPage() {
   const [slogan, setSlogan] = useState();
@@ -31,9 +33,11 @@ export function LandingPage() {
   return (
     <div className="h-full bg-[#ece7d3] font-sans">
       <Navbar />
+      <Header />
       <SocialReview />
       <HowTo />
       <Faq />
+      <PianiFlessibili />
       <Footer />
     </div>
   );
