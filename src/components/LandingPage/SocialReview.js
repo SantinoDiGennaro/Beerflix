@@ -10,26 +10,28 @@ export function SocialReview() {
         <div name="card" className="w-[200px]">
           <img src={testImg} className="w-[200px] h-[200px]" />
           <h4 className="py-2 text-center">
-            Lorem ipsum porco zio bio radonna la bologna del cammino del maiale
+            "Sperimentare gusti nuovi e divertirci con gli amici diventa ancora
+            più facile grazie a @beerflixitalia 💚"{" "}
           </h4>
         </div>
         <div name="card" className="w-[200px]">
           <img src={testImg} className="w-[200px] h-[200px]" />
           <h4 className="py-2 text-center">
-            Lorem ipsum porco zio bio radonna la bologna del cammino del maiale
+            "Durante l’inverno restare a casa può diventare una necessità, ma
+            ero stanco delle solite birre del supermercato. Finalmente ho
+            scoperto le box di @beerflixitalia"{" "}
           </h4>
         </div>
         <div name="card" className="w-[200px]">
           <img src={testImg} className="w-[200px] h-[200px]" />
           <h4 className="py-2 text-center">
-            Lorem ipsum porco zio bio radonna la bologna del cammino del maiale
+            "La box è riciclabile, e la maggior parte dei marchi sono di
+            produzione italiana. L’impatto ambientale è pari allo 0"{" "}
           </h4>
         </div>
         <div name="card" className="w-[200px]">
           <img src={testImg} className="w-[200px] h-[200px]" />
-          <h4 className="py-2 text-center">
-            Lorem ipsum porco zio bio radonna la bologna del cammino del maiale
-          </h4>
+          <h4 className="py-2 text-center"></h4>
         </div>
       </div>
     </div>
