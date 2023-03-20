@@ -1,9 +1,15 @@
 {
   "devDependencies": {
+    "nodemon": "^2.0.21",
     "tailwindcss": "^3.2.4"
   },
   "scripts": {
-    "build":"npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "stripe": "^11.15.0"
   }
 }
