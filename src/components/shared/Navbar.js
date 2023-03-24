@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import beerflix_logo from "../../assets/Beerflix Logo.png";
-import { useState } from "react";
-import { useEffect } from "react";
 
 export function Navbar() {
     return (
