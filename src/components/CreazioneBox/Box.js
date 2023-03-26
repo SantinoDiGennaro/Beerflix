@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 export function Box() {
     const [beers, setBeers] = useState([]);
+    const [selectedBeers, setSelectedBeers] = useState([]);
 
     const fetchBeers = async () => {
         const beers = await (await fetch("http://localhost:4500/data")).json();
