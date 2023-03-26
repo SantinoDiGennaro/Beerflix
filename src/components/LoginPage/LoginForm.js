@@ -11,7 +11,8 @@ export function LoginForm() {
             } else {
                 const data = JSON.parse(localStorage.getItem(user));
                 if (password === data.password) {
-                    alert("Login effettuato");
+                    localStorage.setItem("isLogged", `${user}`);
+                    window.location.reload();
                 } else {
                     throw new Error("Password errata");
                 }
@@ -24,25 +25,25 @@ export function LoginForm() {
 
     return (
         <div>
-            <h1 className="text-2xl font-medium mb-4 text-center">Login</h1>
+            <h1 class="text-2xl font-medium mb-4 text-center">Login</h1>
             <form>
                 <input
                     onChange={(e) => setUser(e.target.value)}
                     type="email"
-                    className="w-full rounded p-2 mb-6"
+                    class="w-full rounded p-2 mb-6"
                     placeholder="Email"
                 />
                 <input
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
-                    className="w-full  rounded p-2 mb-6"
+                    class="w-full  rounded p-2 mb-6"
                     placeholder="Password"
                 />
-                <div className="flex items-center justify-around">
+                <div class="flex items-center justify-around">
                     <button
                         type="button"
                         onClick={login}
-                        className="w-full h-10 bg-[#fb9f1f] text-[#ece7d3] rounded-md border-2 border-[#ece7d3] hover:text-[#fb9f1f] hover:border-[#fb9f1f] hover:bg-[#ece7d3]"
+                        class="w-full h-10 bg-[#fb9f1f] text-[#ece7d3] rounded-md border-2 border-[#ece7d3] hover:text-[#fb9f1f] hover:border-[#fb9f1f] hover:bg-[#ece7d3]"
                     >
                         Login
                     </button>
