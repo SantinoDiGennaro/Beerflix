@@ -22,10 +22,7 @@ export function Box() {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                items: [
-                    { id: 1, quantity: 1 },
-                    { id: 2, quantity: 1 },
-                ],
+                items: [{ id: 1, quantity: 1 }],
             }),
         })
             .then((res) => {
@@ -36,7 +33,7 @@ export function Box() {
                 window.location = url;
             })
             .catch((e) => {
-                console.log(e);
+                console.error(e.error);
             });
     };
 
@@ -99,7 +96,6 @@ export function Box() {
             </div>
 
             <button
-                disabled
                 onClick={() => checkout()}
                 className="my-8 flex w-44 h-16 bg-[#fb9f1f] text-[#ece7d3] text-2xl no-underline justify-center items-center rounded-md border-2 border-[#ece7d3] hover:text-[#fb9f1f] hover:border-[#fb9f1f] hover:bg-[#ece7d3] disabled:bg-[#ece7d3] disabled:text-[#a9a9a9] disabled:border-[#a9a9a9] disabled:cursor-not-allowed disabled:opacity-50"
             >
