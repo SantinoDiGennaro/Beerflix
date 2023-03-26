@@ -4,11 +4,11 @@ export function Faq() {
             <h1 className="text-2xl font-bold text-center py-4">
                 Altre domande?
             </h1>
-            <div class="accordion accordion-flush" id="accordionExample">
-                <div class="accordion-item bg-[#ece7d3]">
-                    <h2 class="accordion-header" id="headingOne">
+            <div className="accordion accordion-flush" id="accordionExample">
+                <div className="accordion-item bg-[#ece7d3]">
+                    <h2 className="accordion-header" id="headingOne">
                         <button
-                            class="accordion-button"
+                            className="accordion-button"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseOne"
@@ -20,11 +20,11 @@ export function Faq() {
                     </h2>
                     <div
                         id="collapseOne"
-                        class="accordion-collapse collapse show"
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                     >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                             <strong>
                                 Offriamo opzioni di abbonamento mensili e
                                 settimanali per box di 3, 4, 5, 6, 7 o 8 birre.
@@ -32,10 +32,10 @@ export function Faq() {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#ece7d3]">
-                    <h2 class="accordion-header" id="headingTwo">
+                <div className="accordion-item bg-[#ece7d3]">
+                    <h2 className="accordion-header" id="headingTwo">
                         <button
-                            class="accordion-button collapsed"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo"
@@ -47,11 +47,11 @@ export function Faq() {
                     </h2>
                     <div
                         id="collapseTwo"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                     >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                             <strong>
                                 Sì, puoi scegliere le bottiglie di birra da
                                 inserire in ogni singolo slot del tuo box.
@@ -59,10 +59,10 @@ export function Faq() {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#ece7d3]">
-                    <h2 class="accordion-header" id="headingThree">
+                <div className="accordion-item bg-[#ece7d3]">
+                    <h2 className="accordion-header" id="headingThree">
                         <button
-                            class="accordion-button collapsed"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseThree"
@@ -75,11 +75,11 @@ export function Faq() {
                     </h2>
                     <div
                         id="collapseThree"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                     >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                             <strong>
                                 Puoi modificare le tue preferenze di birra e il
                                 tuo abbonamento accedendo al tuo account sul
@@ -88,10 +88,10 @@ export function Faq() {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#ece7d3]">
-                    <h2 class="accordion-header" id="headingFour">
+                <div className="accordion-item bg-[#ece7d3]">
+                    <h2 className="accordion-header" id="headingFour">
                         <button
-                            class="accordion-button collapsed"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseFour"
@@ -104,11 +104,11 @@ export function Faq() {
                     </h2>
                     <div
                         id="collapseFour"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample"
                     >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                             <strong>
                                 Addebitiamo la carta di credito degli abbonati
                                 il giorno in cui viene spedito il loro box
@@ -117,10 +117,10 @@ export function Faq() {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#ece7d3]">
-                    <h2 class="accordion-header" id="headingFive">
+                <div className="accordion-item bg-[#ece7d3]">
+                    <h2 className="accordion-header" id="headingFive">
                         <button
-                            class="accordion-button collapsed"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseFive"
@@ -133,11 +133,11 @@ export function Faq() {
                     </h2>
                     <div
                         id="collapseFive"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample"
                     >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                             <strong>
                                 Sì, puoi mettere in pausa o cancellare il tuo
                                 abbonamento in qualsiasi momento accedendo al
@@ -146,10 +146,10 @@ export function Faq() {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#ece7d3]">
-                    <h2 class="accordion-header" id="headingSix">
+                <div className="accordion-item bg-[#ece7d3]">
+                    <h2 className="accordion-header" id="headingSix">
                         <button
-                            class="accordion-button collapsed"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseSix"
@@ -162,11 +162,11 @@ export function Faq() {
                     </h2>
                     <div
                         id="collapseSix"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingSix"
                         data-bs-parent="#accordionExample"
                     >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                             <strong>
                                 I box vengono spediti entro 3-5 giorni
                                 lavorativi dalla data dell'ordine e dovrebbero
