@@ -3,7 +3,6 @@ import { useEffect } from "react";
 
 export function Box() {
     const [beers, setBeers] = useState([]);
-    const [selectedBeers, setSelectedBeers] = useState([]);
 
     const fetchBeers = async () => {
         const beers = await (await fetch("http://localhost:4500/data")).json();
@@ -66,7 +65,6 @@ export function Box() {
                 name="choose-container"
                 className="flex flex-wrap justify-center gap-5 py-5"
             >
-                {/* Design 1 */}
                 {beers.map((el) => {
                     return (
                         <div
@@ -97,33 +95,6 @@ export function Box() {
                         </div>
                     );
                 })}
-                {/* Design 2
-                {beers.map((el) => {
-                    return (
-                        <div
-                            onClick={() =>
-                                setSelectedBeers([...selectedBeers, el.name])
-                            }
-                            className="flex flex-col items-center w-[400px] min-h-[350px] bg-white/80 border-4 border-[#fb9f1f] hover:bg-[#fb9f1f] hover:border-white"
-                        >
-                            <div className="flex gap-4">
-                                <div className="flex flex-col items-center">
-                                    
-                                </div>
-                                <img
-                                    src={el.img}
-                                    alt="beer"
-                                    className="h-3/5 w-1/2 my-3"
-                                />
-                            </div>
-
-                            <h2 className="text-center text-2xl">{el.brand}</h2>
-                            <h2 className="text-center text-2xl">{el.name}</h2>
-                            <p>{el.description}</p>
-                            <p>{el.keywords.map((el) => `#${el} `)}</p>
-                        </div>
-                    );
-                })} */}
             </div>
 
             <button
