@@ -3,7 +3,7 @@ import beerflix_logo from "../../assets/Beerflix Logo.png";
 
 export function Navbar() {
     return (
-        <nav className="h-20 w-full px-4 flex justify-between items-center bg-[#ece7d3]">
+        <nav className="h-20 w-full px-4 flex justify-between items-center bg-[#ece7d3] fixed z-20">
             <div className="flex gap-5 items-center">
                 <Link to="/">
                     <img

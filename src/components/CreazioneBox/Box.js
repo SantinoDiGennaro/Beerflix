@@ -39,7 +39,8 @@ export function Box() {
 
     return (
         <div className="flex flex-col items-center">
-            <div className="flex w-full place-content-between px-24 ">
+            {/* fixed bg-[#ece7d3] */}
+            <div className="flex h-fit w-full place-content-between px-24 py-3 mt-20 fixed bg-[#ece7d3] z-10">
                 {Array.from({ length: 5 }).map((_, index) => (
                     <div
                         key={index}
@@ -61,7 +62,7 @@ export function Box() {
 
             <div
                 name="choose-container"
-                className="flex flex-wrap justify-center gap-5 py-5"
+                className="flex flex-wrap justify-center gap-5 py-5 mt-32"
             >
                 {beers.map((el) => {
                     return (
@@ -96,6 +97,7 @@ export function Box() {
             </div>
 
             <button
+                disabled={!localStorage.getItem("isLogged")}
                 onClick={() => checkout()}
                 className="my-8 flex w-44 h-16 bg-[#fb9f1f] text-[#ece7d3] text-2xl no-underline justify-center items-center rounded-md border-2 border-[#ece7d3] hover:text-[#fb9f1f] hover:border-[#fb9f1f] hover:bg-[#ece7d3] disabled:bg-[#ece7d3] disabled:text-[#a9a9a9] disabled:border-[#a9a9a9] disabled:cursor-not-allowed disabled:opacity-50"
             >
