@@ -43,3 +43,15 @@
     outline: 0;
     box-shadow: 0 0 0 0.25rem #ece7d3 !important;
 }
+
+.d-flex {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.card {
+    flex: 0 0 calc(33.3333% - 1rem);
+    margin: 0.5rem;
+    scroll-snap-align: start;
+}

@@ -39,7 +39,7 @@ export function Box() {
 
     return (
         <div className="flex flex-col items-center">
-            {/* fixed bg-[#ece7d3] */}
+            {/* Beers list */}
             <div className="flex h-fit w-full place-content-between px-24 py-3 mt-20 fixed bg-[#ece7d3] z-10">
                 {Array.from({ length: 5 }).map((_, index) => (
                     <div
@@ -59,7 +59,11 @@ export function Box() {
                     </div>
                 ))}
             </div>
+            {/* Start carousel */}
 
+            {/* End carousel */}
+
+            {/* Beers selection */}
             <div
                 name="choose-container"
                 className="flex flex-wrap justify-center gap-5 py-5 mt-32"
@@ -67,9 +71,15 @@ export function Box() {
                 {beers.map((el) => {
                     return (
                         <div
-                            onClick={() =>
-                                setSelectedBeers([...selectedBeers, el.name])
-                            }
+                            onClick={() => {
+                                if (selectedBeers.length >= 5) {
+                                    alert(
+                                        "Hai selezionato il numero massimo di birre, per favore rimuovine qualcuna o cambia il tuo piano."
+                                    );
+                                    return;
+                                }
+                                setSelectedBeers([...selectedBeers, el.name]);
+                            }}
                             className="flex flex-col items-center w-[400px] min-h-[350px] bg-white/80 border-4 border-[#fb9f1f] hover:bg-[#fb9f1f] hover:border-white"
                         >
                             <img
