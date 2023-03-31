@@ -7,6 +7,8 @@ import { Faq } from "./Faq";
 import { Header } from "./Header";
 import { PianiFlessibili } from "./PianiFlessibili";
 
+import { useRef } from "react";
+
 export function LandingPage() {
     const [slogan, setSlogan] = useState();
     useEffect(() => {
@@ -19,7 +21,6 @@ export function LandingPage() {
         const randomSlogan = slogans[parseInt(Math.random() * slogans.length)];
         setSlogan(randomSlogan);
     }, []);
-
     return (
         <div className="h-full bg-[#ece7d3] font-sans">
             <Navbar />
