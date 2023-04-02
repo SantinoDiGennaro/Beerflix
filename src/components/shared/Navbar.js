@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
 import beerflix_logo from "../../assets/Beerflix Logo.png";
 
 export function Navbar() {
+    
+    const scrollToHowto = () => {
+        window.scrollTo({
+            top: 800,
+            behavior: "smooth"
+        })
+    }
+    
     return (
         <nav className="h-20 w-full px-4 flex justify-between items-center bg-[#ece7d3] fixed z-20">
             <div className="flex gap-5 items-center">
@@ -43,12 +51,12 @@ export function Navbar() {
                     </ul>
                 </div>
 
-                <a
-                    href="#"
+                <button
                     className="text-[#180000] hover:text-[#fb9f1f] no-underline"
+                    onClick={scrollToHowto}
                 >
                     Come funziona
-                </a>
+                </button>
                 <a
                     href="#"
                     className="text-[#180000] hover:text-[#fb9f1f] no-underline"

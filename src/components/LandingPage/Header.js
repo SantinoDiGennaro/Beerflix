@@ -4,7 +4,7 @@ import bellImg from "../../assets/landing-page-image/prima_landing.jpg";
 export function Header() {
     return (
         <div
-            className="w-full h-[435px] border-b-4 border-[#fb9f1f] bg-fixed bg-auto bg-top bg-center bg-no-repeat "
+            className="w-full h-[435px] border-b-4 border-[#fb9f1f] bg-local bg-auto bg-top bg-center bg-no-repeat "
             style={{ backgroundImage: `url(${bellImg})` }}
         >
             <div className="pt-28 pl-8">

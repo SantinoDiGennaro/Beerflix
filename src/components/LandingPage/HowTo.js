@@ -4,9 +4,9 @@ import immagineBox from "../../assets/landing-page-image/immagine_box.png";
 import calendar from "../../assets/landing-page-image/calendar.png";
 import johnnySins from "../../assets/landing-page-image/johnny_sins.PNG";
 import testImg from "../../assets/landing-page-image/rece1.jpg";
+import { useRef } from "react";
 
-export function HowTo() {
-  return (
+export function HowTo() {return (
     <div className="flex flex-col items-center py-6 px-40 border-b-4 border-[#fb9f1f]">
       <h1 className="text-2xl font-bold text-center pt-4">Come funziona</h1>
       <h4 className="pb-4 text-center">
