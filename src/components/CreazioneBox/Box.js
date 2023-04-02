@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { Carousel } from "react-bootstrap";
 
 export function Box() {
     const [beers, setBeers] = useState([]);
@@ -59,6 +60,7 @@ export function Box() {
                     </div>
                 ))}
             </div>
+
             {/* Start carousel */}
 
             {/* End carousel */}

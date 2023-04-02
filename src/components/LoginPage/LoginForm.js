@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function LoginForm() {
     const [user, setUser] = useState(null);
     const [password, setPassword] = useState(null);
+    const [usersList, setUsersList] = useState([]);
+
+    useEffect(() => {
+        const fetchUser = async () => {
+            const users = await (
+                await fetch("http://localhost:4500/users")
+            ).json();
+            setUsersList(users);
+        };
+        fetchUser();
+    }, []);
 
     function login() {
+        const userObject = usersList.find((el) => el.email === user);
+
         try {
-            if (!localStorage.getItem(user)) {
+            if (!userObject) {
                 throw new Error("L'utente non esiste");
             } else {
-                const data = JSON.parse(localStorage.getItem(user));
-                if (password === data.password) {
+                if (password === userObject.password) {
                     localStorage.setItem("isLogged", `${user}`);
                     window.location.reload();
                 } else {
