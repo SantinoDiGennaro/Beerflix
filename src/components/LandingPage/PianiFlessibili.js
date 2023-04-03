@@ -18,7 +18,7 @@ export function PianiFlessibili() {
                     <Link
                         to="selection"
                         role="button"
-                        className=" w-[180px] h-[50px] hover:w-[200px] hover:h-[60px] hover:pt-4 text-black/80 bg-[#fb9f1f] ease-in duration-150 hover:animate-none hover:text-black hover:font-bold hover:text-xl  hover:border-solid-[#ece7d3] no-underline text-center pt-2.5 mt-4 rounded-lg"
+                        className=" w-[180px] h-[50px] hover:w-[200px] hover:h-[60px] text-black/80 bg-[#fb9f1f] ease-in duration-150 hover:animate-none hover:text-black hover:font-bold hover:text-xl  hover:border-solid-[#ece7d3] no-underline mt-4 rounded-lg flex items-center justify-center"
                     >
                         SCOPRI DI PIÙ
                     </Link>
