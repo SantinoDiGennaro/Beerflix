@@ -7,7 +7,10 @@ export function SocialReview() {
                 Attenzione, il vostro aperitivo non sarà più lo stesso, chiedilo
                 a loro!
             </h1>
-            <div name="cards-container" className=" flex justify-around">
+            <div
+                name="cards-container"
+                className=" flex flex-col lg:flex-row justify-around"
+            >
                 <div name="card" className="w-[200px]">
                     <img
                         src={testImg}
