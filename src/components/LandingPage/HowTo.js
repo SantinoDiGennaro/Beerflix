@@ -52,7 +52,7 @@ export function HowTo() {return (
       <div className="py-8">
         <Link
           to="login"
-          className="flex h-10 w-[140px] bg-[#fb9f1f] text-[#ece7d3] no-underline justify-center items-center rounded-md border-2 border-[#ece7d3] hover:text-[#fb9f1f] hover:border-[#fb9f1f] hover:bg-[#ece7d3]"
+          className="flex w-[180px] h-[50px] hover:w-[200px] hover:h-[60px] text-black/80 bg-[#fb9f1f] ease-in duration-150 hover:animate-none hover:text-black hover:font-bold hover:text-xl  hover:border-solid-[#ece7d3] no-underline  mt-4 rounded-lg items-center justify-center"
         >
           SCOPRI DI PIÙ
         </Link>
