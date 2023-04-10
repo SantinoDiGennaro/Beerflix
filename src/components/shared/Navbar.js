@@ -13,10 +13,10 @@ export function Navbar() {
 
     return (
         <div>
-            <nav className="min-h-[80px] h-fit w-full px-4 flex justify-between items-center bg-[#ece7d3] fixed z-20 lg:hidden">
+            <nav className="min-h-[80px] h-fit w-full px-4 flex justify-between items-center bg-[#ece7d3] fixed z-20">
                 <div
                     onClick={() => setBurgerMenu(!burgerMenu)}
-                    className="flex flex-col"
+                    className="flex flex-col lg:hidden"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export function Navbar() {
             <div
                 className={`${
                     burgerMenu ? "hidden" : "flex"
-                } flex-col h-fit gap-5 items-center pt-20 pb-4`}
+                } flex-col h-fit gap-5 items-center pt-20 pb-4 lg:hidden`}
             >
                 <div className="dropdown">
                     <a
