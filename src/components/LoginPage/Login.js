@@ -7,7 +7,7 @@ export function Login() {
 
     return (
         <div className="flex flex-col justify-center items-center mt-20">
-            <div className="w-full bg-[#ece7d3] rounded-lg shadow-md p-6 md:my-10 md:w-[400px]">
+            <div className="w-full bg-[#ece7d3] md:rounded-lg shadow-md p-6 md:my-10 md:w-[400px]">
                 {login && <LoginForm />}
                 {!login && <SignupForm />}
                 <button

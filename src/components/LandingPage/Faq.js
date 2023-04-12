@@ -1,6 +1,6 @@
 export function Faq() {
     return (
-        <div className="px-80 pb-4">
+        <div className=" lg:px-80 pb-4">
             <h1 className="text-2xl font-bold text-center py-4">
                 Altre domande?
             </h1>

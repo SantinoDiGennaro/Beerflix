@@ -61,10 +61,6 @@ export function Box() {
                 ))}
             </div>
 
-            {/* Start carousel */}
-
-            {/* End carousel */}
-
             {/* Beers selection */}
             <div
                 name="choose-container"

@@ -2,14 +2,14 @@ import testImg from "../../assets/landing-page-image/rece1.jpg";
 
 export function SocialReview() {
     return (
-        <div className="py-6 px-40 border-b-4 border-[#fb9f1f]">
-            <h1 className="text-2xl font-bold text-center py-4">
+        <div className="py-6 lg:px-40 border-b-4 border-[#fb9f1f]">
+            <h1 className="text-lg lg:text-2xl font-bold text-center py-4">
                 Attenzione, il vostro aperitivo non sarà più lo stesso, chiedilo
                 a loro!
             </h1>
             <div
                 name="cards-container"
-                className=" flex flex-col lg:flex-row justify-around"
+                className=" flex flex-col justify-around items-center sm:max-lg:items-center gap-3 lg:flex-row lg:items-baseline lg:gap-0"
             >
                 <div name="card" className="w-[200px]">
                     <img

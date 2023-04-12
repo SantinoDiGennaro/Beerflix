@@ -16,7 +16,7 @@ export function Navbar() {
             <nav className="min-h-[80px] h-fit w-full px-4 flex justify-between items-center bg-[#ece7d3] fixed z-20">
                 <div
                     onClick={() => setBurgerMenu(!burgerMenu)}
-                    className="flex flex-col lg:hidden"
+                    className="flex lg:hidden"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +32,13 @@ export function Navbar() {
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                         />
                     </svg>
+                    <Link to="/">
+                        <img
+                            className="w-24 h-12 ml-5"
+                            src={beerflix_logo}
+                            alt="Beerflix logo"
+                        />
+                    </Link>
                 </div>
 
                 <div className="hidden lg:flex gap-5 items-center ">
@@ -126,9 +133,9 @@ export function Navbar() {
             <div
                 className={`${
                     burgerMenu ? "hidden" : "flex"
-                } flex-col h-fit gap-5 items-center pt-20 pb-4 lg:hidden`}
+                } flex-col h-fit gap-5 items-center pt-20 pb-4 lg:hidden bg-[#ece7d3]`}
             >
-                <div className="dropdown">
+                <div className="dropdown ">
                     <a
                         className="dropdown-toggle text-[#180000] hover:text-[#fb9f1f] no-underline"
                         href="#"
@@ -170,6 +177,39 @@ export function Navbar() {
                 >
                     Aiuto
                 </a>
+
+                {!localStorage.getItem("isLogged") && (
+                    <Link to="/login" className="text-[#180000] no-underline">
+                        Accedi
+                    </Link>
+                )}
+                {localStorage.getItem("isLogged") && (
+                    <div>
+                        <a
+                            className="lg:flex dropdown-toggle text-[#180000] hover:text-[#fb9f1f] no-underline"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            {localStorage.getItem("isLogged")}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    className="text-[#180000] hover:text-[#fb9f1f] no-underline"
+                                    href="#"
+                                    onClick={() => {
+                                        localStorage.removeItem("isLogged");
+                                        window.location.reload();
+                                    }}
+                                >
+                                    Esci
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                )}
             </div>
         </div>
     );
