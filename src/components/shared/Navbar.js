@@ -2,14 +2,9 @@ import { Link } from "react-router-dom";
 import beerflix_logo from "../../assets/Beerflix Logo.png";
 import { useState } from "react";
 
-export function Navbar() {
+export function Navbar({scroll}) {
     const [burgerMenu, setBurgerMenu] = useState(false);
-    const scrollToHowto = () => {
-        window.scrollTo({
-            top: 800,
-            behavior: "smooth",
-        });
-    };
+    
 
     return (
         <div>
@@ -82,7 +77,7 @@ export function Navbar() {
 
                     <button
                         className="text-[#180000] hover:text-[#fb9f1f] no-underline"
-                        onClick={scrollToHowto}
+                        onClick={scroll}
                     >
                         Come funziona
                     </button>
@@ -167,7 +162,7 @@ export function Navbar() {
 
                 <button
                     className="text-[#180000] hover:text-[#fb9f1f] no-underline"
-                    onClick={scrollToHowto}
+                    onClick={scroll}
                 >
                     Come funziona
                 </button>

@@ -4,7 +4,7 @@ import wowImg from "../../assets/landing-page-image/famiglia_bottiglie.png";
 export function PianiFlessibili() {
     return (
         <div
-            className="bg-gradient-to-br from-[#ece7d3] to-[#180000] w-full h-[200px]  sm:h-[450px] md:h-[520px] lg:h-[580px]  border-t-4 border-[#fb9f1f]  relative "
+            className="bg-gradient-to-t from-[#ece7d3] to-[#180000] w-full h-[200px]  sm:h-[450px] md:h-[520px] lg:h-[580px]  border-t-4 border-[#fb9f1f]  relative "
             >
             <img src={wowImg} className="w-full h-full  absolute" />
             <div className="pt-6 flex justify-center ">

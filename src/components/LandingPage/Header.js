@@ -19,7 +19,7 @@ export function Header() {
                     <Link
                         to="selection"
                         role="button"
-                        className="animate-pulse w-[180px] h-[50px] text-[#180000] bg-[#ece7d3] ease-in-out duration-500 hover:animate-none hover:text-[#ece7d3] hover:font-bold hover:text-xl hover:bg-transparent hover:border-solid-[#ece7d3] no-underline text-center pt-2.5 mt-4 rounded-lg"
+                        className="animate-pulse w-[180px] h-[50px] text-[#180000] bg-[#ece7d3] ease-in-out duration-500 hover:animate-none hover:text-[#ece7d3] hover:font-bold hover:text-xl hover:bg-transparent hover:border-solid-[#ece7d3] no-underline flex justify-center items-center mt-4 rounded-lg"
                     >
                         SCOPRI DI PIÙ
                     </Link>

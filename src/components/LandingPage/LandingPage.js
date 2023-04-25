@@ -1,13 +1,11 @@
 import { Footer } from "../shared/Footer";
 import { Navbar } from "../shared/Navbar";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { SocialReview } from "./SocialReview";
-import { HowTo } from "./HowTo";
+import  HowTo  from "./HowTo";
 import { Faq } from "./Faq";
 import { Header } from "./Header";
 import { PianiFlessibili } from "./PianiFlessibili";
-
-import { useRef } from "react";
 
 export function LandingPage() {
     const [slogan, setSlogan] = useState();
@@ -21,12 +19,20 @@ export function LandingPage() {
         const randomSlogan = slogans[parseInt(Math.random() * slogans.length)];
         setSlogan(randomSlogan);
     }, []);
+
+    const comeFunzionaRef = useRef(null);
+    const scrollHowTo = () => {
+        comeFunzionaRef.current?.scrollIntoView({
+            behavior: 'smooth',
+        })
+    }
+
     return (
-        <div className="h-full bg-[#ece7d3] font-sans">
-            <Navbar />
+        <div className="h-full bg-[#ece7d3] font-sans ">
+            <Navbar scroll={scrollHowTo}/>
             <Header />
             <SocialReview />
-            <HowTo />
+            <HowTo ref={comeFunzionaRef}/>
             <Faq />
             <PianiFlessibili />
             <Footer />

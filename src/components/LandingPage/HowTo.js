@@ -4,11 +4,11 @@ import immagineBox from "../../assets/landing-page-image/immagine_box.png";
 import calendar from "../../assets/landing-page-image/calendar.png";
 import johnnySins from "../../assets/landing-page-image/johnny_sins.PNG";
 import testImg from "../../assets/landing-page-image/rece1.jpg";
-import { useRef } from "react";
+import { forwardRef } from "react";
 
-export function HowTo() {
+function HowTo( prop ,comeFunzionaRef) {
     return (
-        <div className="flex flex-col items-center py-6 px-20 lg:px-40 border-b-4 border-[#fb9f1f]">
+        <div ref={comeFunzionaRef} className="flex flex-col items-center py-6 px-20 lg:px-40 border-b-4 border-[#fb9f1f]">
             <h1 className="text-2xl font-bold text-center pt-4">
                 Come funziona
             </h1>
@@ -61,7 +61,7 @@ export function HowTo() {
             <div className="py-8">
                 <Link
                     to="login"
-                    className="flex w-[180px] h-[50px] hover:w-[200px] hover:h-[60px] text-black/80 bg-[#fb9f1f] ease-in duration-150 hover:animate-none hover:text-black hover:font-bold hover:text-xl  hover:border-solid-[#ece7d3] no-underline  mt-4 rounded-lg items-center justify-center"
+                    className="flex w-[180px] h-[50px] hover:w-[220px] hover:h-[60px] text-black/80 bg-[#fb9f1f] ease-in duration-150 hover:animate-none hover:text-black hover:font-bold hover:text-xl  hover:border-solid-[#ece7d3] no-underline  mt-4 rounded-lg items-center justify-center"
                 >
                     SCOPRI DI PIÙ
                 </Link>
@@ -69,3 +69,5 @@ export function HowTo() {
         </div>
     );
 }
+
+export default forwardRef(HowTo);
